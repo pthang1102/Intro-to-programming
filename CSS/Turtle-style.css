@@ -1,0 +1,30 @@
+.card {
+    width: 320px;
+    border: solid midnightblue 2px;
+    background-color: lightskyblue;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+}
+
+.info {
+    border: 1px solid lightslategray;
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+.fact {
+    font-style: italic;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.label {
+    font-weight: bold;
+}
+
