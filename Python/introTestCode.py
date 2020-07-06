@@ -1,4 +1,4 @@
-# This program draws a triangle
+# This program draws a triangle.
 import turtle
 
 fred = turtle.Turtle()
