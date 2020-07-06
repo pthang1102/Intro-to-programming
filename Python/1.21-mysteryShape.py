@@ -1,3 +1,4 @@
+# This program draws a red house (or an arrow) using Turtle module
 import turtle
 
 builder = turtle.Turtle()
