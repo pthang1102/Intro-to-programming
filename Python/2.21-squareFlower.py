@@ -11,6 +11,10 @@ art.width(5)
 art.color("violet")
 art.speed(10)
 
-for petal in range(6):
-    draw_square(art)
-    art.right(60)
+def draw_flower(some_turtle):
+    for petal in range(6):
+        draw_square(some_turtle)
+        some_turtle.right(60)
+    some_turtle.hideturtle()
+
+draw_flower(art)
