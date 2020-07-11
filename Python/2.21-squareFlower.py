@@ -1,4 +1,5 @@
 # This program draws a flower out of squares
+# Create 2 functions. One function calls other function.
 import turtle
 
 def draw_square(some_turtle):
