@@ -1,0 +1,45 @@
+1.Assign value to variable:
+x=100 
+echo $x
+echo $COLUMNS x $LINES
+
+2. Navigating directories:
+pwd: print the current (working) directory to the terminal
+ls: list the contents of the current directory
+cd Downloads: move to the Download directory
+cd ~ : move to home directory
+cd Desktop/Photos: relative path
+VS. cd /home/workspace/Desktop/Photos: absolute path
+cd .. : go up one directory (move to the parent directory)
+ls .. : list the contents of the parent directory
+
+3. Options with 'ls' command:
+ls -l: gives a more detailed list than 'ls' itself
+ls *.txt : list all the files whose name END with '.txt'
+ls bear* : list all the files whose name START with the word 'bear'
+ls *poem* : results in listing 'bad_poem.rtf' and 'nonsense_poem.txt'
+
+4. Organizing directory/files (mkdir, mv):
+mkdir Documents/Books: create a folder named 'Books' inside Documents directory
+mv Documents/*.epub Documents/Books: move all '.epub' files into Books directory
+
+5. Downloading files (curl):
+curl 'https://www.google.com' : output whatever it downloads directly to the terminal.
+curl -L -o google.html 'http://google.com' : download content from the page, give it a name 'google.html'  
+(-L : redirect option of 'curl')
+(-o : output the data to a file)
+
+6. Viewing files (cat, less):
+cat Desktop/dictionary.txt : display the full content of the file
+less Desktop/dictionary.txt : display the output in a format that allows you to search and scroll
+(space/down arrow: scroll down. b/up arrow: scroll up.  /: search.  q: quit)
+
+7. Removing things (rm, rmdir):
+rm SillyFile.txt: delete the file PERMANENTLY
+rm -i SillyFile.txt: delete the file PERMANENTLY, but double-check first
+rm file1 file2 file3: delete multiple files
+rmdir BadDirectory: delete the directory PERMANENTLY
+rmdir Dir1 Dir2 Dir3: delete multiple directories
+NOTE: if file-name or directory-name has a SPACE in it, put the whole name in single quotes
+e.g. rm *'Bad F'* : remove files with 'Bad F' phrases in it
+
