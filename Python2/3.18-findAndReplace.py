@@ -1,4 +1,4 @@
-# This program finds and replace all instances of an undesirable substring by a given replacement.
+# This program finds and REPLACES all instances of an undesirable substring by a given replacement.
 def replace_substring(string, sub, replacement):
     output = []
     index = 0
