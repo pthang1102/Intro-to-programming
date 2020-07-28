@@ -5,7 +5,10 @@ def count_substring(string, substring):
     while index < len(string):
         if string[index:index+len(substring)] == substring:
             count += 1
-        index += 1
+            index += len(substring) # This avoids overlapping matches
+        else:
+            index += 1
     return count
 
 print(count_substring('love, love, love, love, Love, all you need is love!', 'love')) # Should print 5
+print(count_substring('FFFF', 'FF')) # Should print 2 (if overlapped, it prints 3!)
