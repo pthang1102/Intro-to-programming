@@ -1,0 +1,4 @@
+1. pycodestyle helps write Python code that will be easier to read for other Python programmers.
+    $ pip install pycodestyle
+2. To check file test.py, run:
+    $ pycodestyle test.py
