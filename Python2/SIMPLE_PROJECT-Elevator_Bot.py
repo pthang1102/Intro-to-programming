@@ -1,7 +1,7 @@
 # This program gives users a ride in its 3-floor elevator.
-# Choose which floor do you want to go to, and see what happens!
+# Choose which floor you want to go to, and see what happens!
 # You are a programming engineer coming to your new workplace the 1st time!
-# Let's discover!
+# Let's discover!!
 
 import time
 
