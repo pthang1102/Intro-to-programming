@@ -4,12 +4,13 @@
 import time
 import random
 
-
+# Print, then pause 1 second after printing
 def print_pause(message_to_print):
     print(message_to_print)
     time.sleep(1)
 
 
+# Print Introduction
 def intro(items, monster):
     print_pause("You find yourself standing in an open field, "
                 "filled with grass and yellow wildflowers.\n")
@@ -21,6 +22,7 @@ def intro(items, monster):
                 "(but not very effective) dagger.\n")
 
 
+# On the field
 def field(items, monster):
     print_pause("Enter [1] to knock on the door of the house.\n")
     print_pause("Enter [2] to peer into the cave.\n")
@@ -36,6 +38,7 @@ def field(items, monster):
         field(items, monster)
 
 
+# When player chooses to explore the cave
 def cave(items, monster):
     print_pause("You peer cautiously into the cave.\n")
     if "sward" in items:
@@ -52,6 +55,7 @@ def cave(items, monster):
     field(items, monster)
 
 
+# When player chooses to check the house
 def house(items, monster):
     print_pause("You approach the door of the house.\n")
     print_pause(f"You are about to knock when the door "
@@ -88,6 +92,7 @@ def house(items, monster):
             print_pause("Wrong input! Please enter again!\n")
 
 
+# Play the game again
 def play_again():
     response = input("Would you want to play again (y/n)?\n").lower()
     if response == "y":
